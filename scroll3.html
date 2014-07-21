@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+*{margin:0;padding:0;font-family:Helvetica, Arial, sans-serif;color:#333;}
+body{background:#eee;}
+#wrapper{}
+#top,#bottom{color:#eee;}
+#top span,#bottom span{padding:0 30px;color:#eee;text-transform:uppercase;position: relative;top: 20px;}
+#bottom span{padding:0 15px;top:40px;position:relative;}
+#top{height:60px;width:100%;background:#999;}
+#top span.right{float:right;text-align:right;}
+#bottom{z-index:1000;height:60px;width:100%;position:fixed;bottom:0;display:block;background:#999;}
+#bottom ul{width:100%;float:left;}
+#bottom ul li{list-style:none;width:15%;float:left;text-align:center;color:#eee;padding:20px 0;}
+#bottom ul li.active{background:#666;font-weight:bold;}
+#left,#right{float:left;height:600px;background:#eee;}
+#left{width:270px;}
+#leftmenu{display:block;padding:30px;padding-top:30px;}
+#middle ul{margin-left:15px;}
+#middle ul li{list-style:none;margin:0;padding:0;font-size:1.2em;font-weight:lighter;margin-top:25px;}
+#middle ul li.active{font-weight:bold;}
+#middle ul li.active span{width:30px;height:20px;background:#999;position:absolute;left:0;}
+#middle{padding:30px;}
+#scrollframe{width:100%;overflow:scroll;}
+#search{margin-top:40px;color:#666;}
+#tilewrapper{width:3000px;}
+.tile{float:left;margin:30px 27px 0 3px;width:230px;}
+.tile img{width:100%;box-shadow:0 2px 2px #999;margin-bottom:10px;}
+a.featured{padding:5px;}
+.hidden{display:none;}
+a{text-decoration:none;}
+.slideover{margin-left:270px;}
+.leftnav{z-index:999;display:none;position:fixed;left:29px;background:#eee;;height:600px;width:255px}
+</style>
+<script src="scripts/jquery-min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.featured').click(function(){
+				$('.leftnav').toggle();
+				$('#tilewrapper .hidden').toggle('slow');
+				
+		});
+	});
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="top"><span>Remaining time: 2h45m  |  arrival 12:45pm EST</span><span class="right">Restroom: AVAILABLE</span><div style="clear:both;height:0;"></div>
+    </div>
+    <div id="middle">
+   
+	<h3 style="margin:0 0 0 0;"><a href="#" class="featured"><img src="img/hamburger.png" style="margin-right:10px;"/>Featured Movies</a></h3>
+    <div class="leftnav">
+   
+                <ul style="margin-top:53px;">
+                <li class="active">Featured</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Family</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Family</li>
+           		</ul>
+                   
+            </div>
+            
+    	
+        <div id="scrollframe">
+    	<div id="tilewrapper">
+             <div class="tile hidden">
+                <ul>
+                <li class="active"><span></span>Featured</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Family</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Family</li>
+           		</ul>
+                   
+            </div>
+            <div class="tile">
+                <img src="http://www.movietrailerreviews.net/home/wp-content/uploads/2012/12/oblivion-movie-poster.jpg" />
+                Oblivion
+            </div>
+            <div class="tile">
+                <img src="http://a4.mzstatic.com/us/r30/Video5/v4/8e/ec/be/8eecbe1a-78cb-6603-30ec-97668e257a38/TheWolfofWallStreet_iTunesPre-sale_1400x2100.jpg" />
+                The Wolf of Wall Street
+            </div>
+            <div class="tile">
+                <img src="http://static6.businessinsider.com/image/51fefd99eab8eafe33000019-1200-2000/iron%20man%203%20poster-1.jpg" />
+                Iron Man 3
+            </div>
+             <div class="tile">
+                <img src="http://www.movietrailerreviews.net/home/wp-content/uploads/2012/12/oblivion-movie-poster.jpg" />
+                Oblivion
+            </div>
+            <div class="tile">
+                <div style="height:308px;vertical-align:middle;"><img src="img/ad.png" style="margin-top:60px"/></div>
+                advertisement
+            </div>
+            <div class="tile">
+                <img src="http://a4.mzstatic.com/us/r30/Video5/v4/8e/ec/be/8eecbe1a-78cb-6603-30ec-97668e257a38/TheWolfofWallStreet_iTunesPre-sale_1400x2100.jpg" />
+                The Wolf of Wall Street
+            </div>
+              <div class="tile">
+                <img src="http://www.movietrailerreviews.net/home/wp-content/uploads/2012/12/oblivion-movie-poster.jpg" />
+                Oblivion
+            </div>
+            <div class="tile">
+                <img src="http://a4.mzstatic.com/us/r30/Video5/v4/8e/ec/be/8eecbe1a-78cb-6603-30ec-97668e257a38/TheWolfofWallStreet_iTunesPre-sale_1400x2100.jpg" />
+                The Wolf of Wall Street
+            </div>
+            <div class="tile">
+                <img src="http://static6.businessinsider.com/image/51fefd99eab8eafe33000019-1200-2000/iron%20man%203%20poster-1.jpg" />
+                Iron Man 3
+            </div>
+            <div style="clear:both;height:0;"></div>
+       	</div> 
+        </div> <!--endscrollframe-->
+            
+        </div><!--endwrapper-->
+    </div>
+    <div style="clear:both;height:0;"></div>
+    <div id="bottom">
+    <ul>
+    	<li style="text-align:center;"><img src="img/search-white.png"</li>
+        <li class="active">Movies</li>
+        <li>Shows</li>
+        <li>Live TV</li>
+        <li>Music</li>
+        <li>Food & Drink</li>
+        <li>My Flight</li>
+   	</ul>
+    </div>
+</div>
+</body>
+</html>

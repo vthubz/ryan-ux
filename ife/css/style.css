@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin:0;padding:0;font-family:Helvetica, Arial, sans-serif;color:#333;}
+body{background:#eee;}
+#wrapper{}
+#top,#bottom{color:#eee;}
+#top span,#bottom span{padding:0 30px;color:#eee;text-transform:uppercase;position: relative;top: 20px;}
+#bottom span{padding:0 15px;top:40px;position:relative;}
+#top{height:60px;width:100%;background:#999;}
+#top span.right{float:right;text-align:right;}
+#bottom{z-index:1000;height:60px;width:100%;position:fixed;bottom:0;display:block;background:#999;}
+#bottom ul{width:100%;float:left;}
+#bottom ul li{list-style:none;width:14%;float:left;text-align:center;}
+#bottom ul li a{color:#eee;padding:20px;display:block}
+#bottom ul li.active{background:#666;font-weight:bold;}
+#left,#right{float:left;height:600px;background:#eee;}
+#left{width:270px;}
+#leftmenu{display:block;padding:30px;padding-top:30px;}
+#middle ul{margin-left:15px;}
+#middle ul li{list-style:none;margin:0;padding:0;font-size:1.2em;font-weight:lighter;margin-top:25px;}
+#middle ul li.active{font-weight:bold;}
+#middle ul li.active span{width:30px;height:20px;background:#999;position:absolute;left:0;}
+#middle{padding:30px;padding-right:0;}
+.scrollframe{width:100%;overflow:scroll;padding-bottom:20px;}
+#tilewrapper{width:3000px;}
+.tile{float:left;margin:30px 27px 0 3px;width:230px;}
+.tile img{width:100%;box-shadow:0 2px 2px #999;margin-bottom:10px;}
+a.featured{padding:5px;}
+.hidden{display:none;}
+a{text-decoration:none;}
+.slideover{margin-left:270px;}
+.leftnav{z-index:999;position:fixed;left:29px;background:#eee;;height:600px;width:255px}
+span#head{text-transform:capitalize;}
+#middle p{padding-top:20px;text-transform:uppercase;font-weight:bold;display:block;border-top:1px solid #CCC;}
+#searchbar{display:none;position:fixed;top:0;height:100%;width:100%;background:#333;z-index:2000}
+#searchwrap{padding:30px;}
+#keyboard{position:fixed;bottom:0;}
+#searchbar input{font-size:1em;font-weight:lighter;color:#fff;display:block;width:90%;border:none;outline:none;margin:0;background:none;}
+#searchbar input:focus{border:none;}
+#autoresults{display:none;}
